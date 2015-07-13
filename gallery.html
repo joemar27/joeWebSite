@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="swipebox-master/src/css/swipebox.css">
     <!--<script src="Chart.js-master/Chart.js"></script>
     <script src="userjs/userChart.js"></script>-->
     <script src="userjs/userJs.js"></script>
@@ -18,21 +19,38 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="swipebox-master/lib/jquery-2.1.0.min.js"></script>
+    <script src="swipebox-master/src/js/jquery.swipebox.js"></script>
       <script>
-     
+      ;( function( $ ) {
+
+          $( '.swipebox' ).swipebox( {
+        		useCSS : true, // false will force the use of jQuery for animations
+        		useSVG : true, // false to force the use of png for buttons
+        		initialIndexOnArray : 0, // which image index to init when a array is passed
+        		hideCloseButtonOnMobile : false, // true will hide the close button on mobile devices
+        		hideBarsDelay : 10000, // delay before hiding bars on desktop
+        		videoMaxWidth : 1140, // videos max width
+        		//beforeOpen: function() {}, // called before opening
+        		//afterOpen: null, // called after opening
+        		//afterClose: function() {}, // called after closing
+        		loopAtEnd: true // true will return to the first image after the last image is reached
+        	} );
+
+      } )( jQuery );
       </script>
       <style>
         #navAndImage{
-            margin-bottom: 60px;   
+            margin-bottom: 60px;
         }
         body{
-            background-color: #D3D3D3;   
+            background-color: #D3D3D3;
         }
         #myGallery a{
             color: white;
         }
       </style>
-      
+
   </head>
   <body>
     <div id="navAndImage">
@@ -76,7 +94,7 @@
                                 <p>February 2015-Present</p>
                             </div>
                             <div class="col-md-4">
-                            
+
                             </div>
                             <div class="col-md-4">
                                 <p><a href="http://login.jobjacket.pics" target="_blank">http://login.jobjacket.pics</a></p>
@@ -91,23 +109,35 @@
                             </article>
                             <div class="row">
                                 <div class="col-xs-6 col-md-4">
+                                    <a href="images/jobJacket/login.png" class="swipebox" title="Login Page">
                                     <img src="images/jobJacket/login.png" class="thumbnail" style="width: 300px; height: 200px;">
-                                </div>  
+                                    </a>
+                                </div>
                                 <div class="col-xs-6 col-md-4">
+                                    <a rel="gallery-1" href="images/jobJacket/dashboard.png" class="swipebox" title="Dashboard Page">
                                     <img src="images/jobJacket/dashboard.png" class="thumbnail" style="width: 300px; height: 200px;">
-                                </div>  
+                                    </a>
+                                </div>
                                 <div class="col-xs-6 col-md-4">
+                                    <a rel="gallery-1" href="images/jobJacket/jacketLevel.png" class="swipebox" title="Jacket View">
                                     <img src="images/jobJacket/jacketLevel.png" class="thumbnail" style="width: 300px; height: 200px;">
-                                </div>  
+                                    </a>
+                                </div>
                                 <div class="col-xs-6 col-md-4">
+                                    <a rel="gallery-1" href="images/jobJacket/modalDisplay.png" class="swipebox" title="Modal Display">
                                     <img src="images/jobJacket/modalDisplay.png" class="thumbnail" style="width: 300px; height: 200px;">
-                                </div>  
+                                    </a>
+                                </div>
                                 <div class="col-xs-6 col-md-4">
+                                    <a rel="gallery-1" href="images/jobJacket/displayImage.png" class="swipebox" title="Display Image">
                                     <img src="images/jobJacket/displayImage.png" class="thumbnail" style="width: 300px; height: 200px;">
-                                </div>  
+                                    </a>
+                                </div>
                                 <div class="col-xs-6 col-md-4">
+                                    <a rel="gallery-1" href="images/jobJacket/editUsers.png" class="swipebox" title="Edit Users">
                                     <img src="images/jobJacket/editUsers.png" class="thumbnail" style="width: 300px; height: 200px;">
-                                </div>  
+                                    </a>
+                                </div>
                             </div>
                           </div>
                         </div>
@@ -127,7 +157,7 @@
                                 <p>February 2015</p>
                             </div>
                             <div class="col-md-4">
-                            
+
                             </div>
                             <div class="col-md-4">
                                 <p>Android App and iPhone App - Made w/ Intel XDK</p>
@@ -142,16 +172,16 @@
                             <div class="row">
                                 <div class="col-xs-6 col-md-3">
                                     <img src="images/pensarDriverApp/login.png" class="thumbnail" style="width:200px; height: 300px;">
-                                </div>  
+                                </div>
                                 <div class="col-xs-6 col-md-3">
                                     <img src="images/pensarDriverApp/homeScreen.png" class="thumbnail" style="width: 200px; height: 300px;">
-                                </div>  
+                                </div>
                                 <div class="col-xs-6 col-md-3">
                                     <img src="images/pensarDriverApp/checkout.png" class="thumbnail" style="width: 200px; height: 300px;">
                                 </div>
                                 <div class="col-xs-6 col-md-3">
                                     <img src="images/pensarDriverApp/logout.png" class="thumbnail" style="width: 200px; height: 300px;">
-                                </div> 
+                                </div>
                             </div>
                           </div>
                           </div>
@@ -172,7 +202,7 @@
                                 <p>August 2013-2014</p>
                             </div>
                             <div class="col-md-4">
-                            
+
                             </div>
                             <div class="col-md-4">
                                 <p><a href="http://www.redefinepe.com" target="_blank">http://www.redefinepe.com </a></p>
@@ -185,13 +215,13 @@
                             <div class="row">
                                 <div class="col-xs-6 col-md-4">
                                     <img src="images/redefinePe/website.png" class="thumbnail" style="width: 300px; height: 200px;">
-                                </div>  
+                                </div>
                                 <div class="col-xs-6 col-md-4">
                                     <img src="images/redefinePe/googlePlay.png" class="thumbnail" style="width: 300px; height: 200px;">
-                                </div>  
+                                </div>
                                 <div class="col-xs-6 col-md-4">
                                     <img src="images/redefinePe/appStore.png" class="thumbnail" style="width: 300px; height: 200px;">
-                                </div>    
+                                </div>
                             </div>
                           </div>
                           </div>
@@ -212,7 +242,7 @@
                                 <p>July 2013</p>
                             </div>
                             <div class="col-md-4">
-                            
+
                             </div>
                             <div class="col-md-4">
                                 <p><a href="http://www.bestlawncarekansascity.com" target="_blank">http://www.bestlawncarekansascity.com</a></p>
@@ -224,7 +254,7 @@
                             <div class="row">
                                 <div class="col-xs-6 col-md-4">
                                     <img src="images/bestLawn/homePage.png" class="thumbnail" style="width: 300px; height: 200px;">
-                                </div>     
+                                </div>
                             </div>
                           </div>
                         </div>
@@ -245,7 +275,7 @@
                                 <p>April 2013-Present</p>
                             </div>
                             <div class="col-md-4">
-                            
+
                             </div>
                             <div class="col-md-4">
                                 <p>Debian Linux, MSSQL, MySQL</p>
